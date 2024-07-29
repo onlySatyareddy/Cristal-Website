@@ -1,0 +1,934 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ /* navbar-start */
+
+#container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #FED7BA;
+  color: black;
+  /* position: fixed; */
+  top: 0;
+  width: 100%;
+  height: 60px;
+  border: 2px solid rgba(30, 112, 160, 0.445);
+  z-index: 1000;
+}
+
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+}
+
+.menu-toggle .hamburger {
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+ul.menu {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+ul.menu li {
+  margin-right: 40px;
+}
+
+ul.menu li:last-child {
+  margin-right: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.name1 {
+  display: inline-block;
+  background-color: #8B0000;
+  color: white;
+  height: 30px;
+  width: 50px;
+  text-align: center;
+  line-height: 20px;
+  padding: 5px;
+}
+
+.logo-container {
+  text-align: center;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .menu-toggle {
+      display: flex;
+  }
+
+  ul.menu {
+      display: none;
+      flex-direction: column;
+      background-color: #FED7BA;
+      position: absolute;
+      top: 55px;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      padding: 20px 0;
+  }
+
+  ul.menu.show {
+      display: flex;
+  }
+
+  ul.menu li {
+      margin: 10px 0;
+  }
+
+  .logo-container {
+      order: -1;
+      margin-right: auto;
+      margin-left: auto;
+  }
+}
+
+
+
+ /* <!-- Browser-text-start --> */
+ .imagess {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 62px;
+    background-color: #FED7BA;
+    flex-wrap: wrap;
+}
+
+.left-image {
+    width: 45%;
+    height: 780px;
+
+}
+
+.right-images {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 53%;
+}
+
+.right-images img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 9px;
+}
+
+.right-images img:last-child {
+    margin-bottom: 0;
+}
+
+.imagess h1,
+.imagess p {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .imagess {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px; 
+    }
+
+    .left-image,
+    .right-images {
+        width: 100%; 
+    }
+
+    .left-image {
+        height: auto; 
+        margin-bottom: 20px;
+    }
+
+    .right-images img {
+        margin-bottom: 20px;
+    }
+
+    .right-images img:last-child {
+        margin-bottom: 0;
+    }
+}
+/* <!-- Browser-text-end--> */
+
+/* <!-- image-text-code-start --> */
+.row1 {
+    display: flex;
+    justify-content: flex-start;
+    margin: 20px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin-left: 220px;
+    margin-right: 220px;
+    text-align: center;
+    background-color: white;
+  }
+  
+  .card {
+    padding: 10px;
+    width: 200px;
+    height: 220px;
+    display: inline-block;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+
+  .card:hover {
+    transform: scale(1.05);
+  }
+
+  .hedfs {
+    margin-left: 1%;
+    text-transform: capitalize;
+    font-size: 25px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .row {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    .card {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  } 
+  /* <!-- image-text-code-end --> */
+
+ /* <!-- Best-seller-start --> */
+.Best-seller {
+  margin: 10px;
+  background-color: #FED7BA;
+  height: auto;
+}
+
+.seller {
+  text-align: center;
+  padding: 30px;
+}
+
+.row1 {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+.column1 {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.card1 {
+  padding: 10px;
+  text-align: center;
+}
+
+h3 {
+  margin-bottom: 5px;
+}
+
+p {
+  margin: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .row1 {
+    display: block; 
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .column1 {
+    flex: none; 
+    margin: 10px 0; 
+  }
+}
+/* <!-- Best-seller-end --> */
+
+  /* <!-- Bridal Jewellery Special-start --> */
+  .Best-seller2 {
+    margin: 20px;
+  }
+  
+  .seller2 {
+    text-align: center;
+    background-color: #FED7BA;
+  }
+  
+  .row2 {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+  
+  .column2 {
+    flex: 1;
+    margin: 0 10px;
+  }
+  
+  .card2 {
+    background-color: #8B0000;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .card2.white {
+    background-color: white;
+    background-color: #8B0000;
+  }
+  
+  .card2.gray {
+    background-color: gray;
+    color: white;
+    background-color: #8B0000;
+  }
+  
+  .p2 {
+    margin: 0;
+    text-align: center;
+    padding: 5%;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .row2 {
+      flex-wrap: wrap;
+      margin-right: 0;
+      margin-left: 0;
+    }
+  
+    .column2 {
+      flex-basis: 100%;
+      margin: 10px 0;
+    }
+  }
+
+   /* <!-- Bridal Jewellery Special-end --> */
+  
+   /* <!-- GIFT-CARDS-start--> */
+   .example {
+    position: relative;
+    width: 100%;
+    height: 50vh; 
+    overflow: hidden;
+  }
+  
+  .background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    display: block;
+  }
+  
+  .example h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; 
+    font-size: 3em; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    text-align: center;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .example h1 {
+      font-size: 2em; /
+    }
+  }
+     /* <!-- GIFT-CARDS-end--> */
+
+       
+     /* <!-- Recommendation-start --> */
+ .imagess5{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 62px;
+    background-color: #FED7BA;
+    flex-wrap: wrap;
+    
+}
+
+.left-image5 {
+    width: 45%;
+    height: 780px;
+    border-radius: 10%;
+}
+
+.right-images5{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 53%;
+}
+
+.right-images5 img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 9px;
+}
+
+.right-images5 img:last-child {
+    margin-bottom: 0;
+}
+
+.imagess5 h1,
+.imagess5 p {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .imagess5 {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px; 
+    }
+
+    .left-image5,
+    .right-images5 {
+        width: 100%; 
+    }
+
+    .left-image5 {
+        height: auto; 
+        margin-bottom: 20px;
+    }
+
+    .right-images5 img {
+        margin-bottom: 20px;
+    }
+
+    .right-images5 img:last-child {
+        margin-bottom: 0;
+    }
+}
+
+/* <!-- Recommendation-end--> */
+/* footer-start */
+footer {
+  background-color: #D9D9D9;
+  color: black;
+  padding: 20px 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 0 15px;
+}
+
+.footer-section h4 {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 5px 0;
+}
+
+.footer-section ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-section p {
+  margin: 10px 0;
+}
+
+.footer-section p a {
+  color: black;
+  text-decoration: none;
+}
+
+.footer-section p a:hover {
+  text-decoration: underline;
+}
+.para{
+  text-align: center;
+  background-color: #FED7BA;
+  height: 30px;
+  padding: 5px;
+  color: #8B0000;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .footer-section {
+      margin-bottom: 20px;
+      text-align: center;
+  }
+}
+
+/* footer-end */
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+.video-container {
+  width: 120%;
+  max-width: 100%; 
+  height: 400px; 
+}
+
+video {
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover;
+}
+/* ************************3***************************** */
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  overflow: auto; 
+}
+
+.popup-content {
+  padding: 20px;
+  border-radius: 5px;
+  width: 700px;
+  position: relative;
+  background-color: rgb(214, 181, 192);
+  max-height: 90%; 
+  overflow-y: auto; 
+}
+
+.popup-content h2 {
+  margin-top: 0;
+}
+
+.tab {
+  display: none;
+}
+
+.tab.active {
+  display: block;
+}
+
+.tab-buttons {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.tab-buttons button {
+  margin: 5px;
+  padding: 10px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  .popup-content {
+    width: 90%;
+  }
+}
+/* Base styles */
+#signupFormElem {
+  max-width: 400px;
+  margin: 0 auto;
+  border-radius: 5px;
+  margin-left: 300px;
+}
+
+#signupFormElem label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+#signupFormElem input[type="text"],
+#signupFormElem input[type="email"],
+#signupFormElem input[type="password"] {
+  width: 40%;
+  padding: 2px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  box-sizing: border-box; 
+  min-width: 250px;
+  height: 30px;
+}
+
+#signupFormElem .form-field {
+  margin-bottom: 10px;
+}
+
+#signupFormElem .form-field input {
+  flex: 1;
+  margin-right: 10px;
+}
+
+#signupFormElem .form-field button {
+  background-color: #D27F7F;
+  color: white;
+  height: 30px;
+  width: 15%;
+}
+
+#signupFormElem button[type="submit"] {
+  width: 90%;
+  padding: 10px;
+  background-color: #D27F7F;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#signupFormElem button[type="submit"]:hover {
+  background-color: #D27F7F;
+}
+
+#signupFormElem p {
+  text-align: center;
+  margin-top: 15px;
+  color: brown;
+}
+
+#signupFormElem p a {
+  color: brown;
+}
+
+@media only screen and (max-width: 600px) {
+  #signupFormElem {
+    width: 90%;
+    margin-left: auto; 
+    margin-right: auto;
+  }
+
+  #signupFormElem input[type="text"],
+  #signupFormElem input[type="email"],
+  #signupFormElem input[type="password"],
+  #signupFormElem input[type="checkbox"] {
+    width: 100%; 
+  }
+
+  #signupFormElem button[type="submit"] {
+    width: 100%; 
+  }
+}
+
+/* Login-start */
+#loginFormElem {
+  max-width: 450px;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 5px;
+  margin-left: 300px;
+}
+
+#loginFormElem label {
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+#loginFormElem input[type="email"],
+#loginFormElem input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border-radius: 3px;
+  box-sizing: border-box; 
+}
+
+#loginFormElem button[type="submit"],
+#loginFormElem button[type="button"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #D27F7F;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#loginFormElem button[type="submit"]:hover,
+#loginFormElem button[type="button"]:hover {
+  background-color: #D27F7F;
+}
+
+#loginFormElem p {
+  text-align: center;
+  margin-top: 15px;
+  color: brown;
+}
+
+#loginFormElem p a {
+  color: brown;
+}
+
+@media only screen and (max-width: 768px) {
+  #loginFormElem {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+/* Login-end */
+
+/* forget-button-start */
+#forgotPasswordFormElem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 500px;
+  margin: 0 auto; 
+}
+
+#forgotPasswordFormElem label {
+  margin: 10px 0 5px;
+  font-weight: bold;
+  text-align: left;
+  width: 100%; 
+}
+
+#forgotPasswordFormElem input[type="email"] {
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; 
+}
+
+#forgotPasswordFormElem button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #D27F7F;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#forgotPasswordFormElem button[type="submit"]:hover {
+  background-color: #D27F7F;
+}
+
+#forgotPasswordFormElem p {
+  text-align: center;
+  color: brown;
+  margin-top: 20px;
+}
+
+#forgotPasswordFormElem p a {
+  color: brown;
+  text-decoration: none;
+}
+
+#forgotPasswordFormElem p a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  #forgotPasswordFormElem {
+    max-width: 90%;
+  }
+}
+/* forget-button-end */
+/* admin-start */
+#adminSignupFormElem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+#adminSignupFormElem label {
+  margin: 10px 0 5px;
+  font-weight: bold;
+  text-align: left;
+  width: 100%;
+}
+
+#adminSignupFormElem input[type="text"],
+#adminSignupFormElem input[type="email"],
+#adminSignupFormElem input[type="password"] {
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+#adminSignupFormElem button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #D27F7F;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px; 
+}
+
+#adminSignupFormElem button[type="submit"]:hover {
+  background-color: #D27F7F;
+}
+
+#adminSignupFormElem p {
+  text-align: center;
+  color: brown;
+  margin-top: 20px;
+}
+
+#adminSignupFormElem p a {
+  color: brown;
+  text-decoration: none;
+}
+
+#adminSignupFormElem p a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  #adminSignupFormElem {
+    max-width: 90%;
+  }
+
+  #adminSignupFormElem input[type="text"],
+  #adminSignupFormElem input[type="email"],
+  #adminSignupFormElem input[type="password"] {
+    width: 90%;
+  }
+}
+/* admin-close */
+
+/* Styles for admin login form */
+#adminLoginFormElem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+#adminLoginFormElem label {
+  margin: 10px 0 5px;
+  font-weight: bold;
+  text-align: left;
+  width: 100%;
+}
+
+#adminLoginFormElem input[type="email"],
+#adminLoginFormElem input[type="password"] {
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+#adminLoginFormElem button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #D27F7F; 
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px; 
+}
+
+#adminLoginFormElem button[type="submit"]:hover {
+  background-color: #D27F7F; 
+}
+
+#adminLoginFormElem p {
+  text-align: center;
+  color: brown;
+  margin-top: 20px;
+}
+
+#adminLoginFormElem p a {
+  color: brown;
+  text-decoration: none;
+}
+
+#adminLoginFormElem p a:hover {
+  text-decoration: underline;
+}
+
+
+

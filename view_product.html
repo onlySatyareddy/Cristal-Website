@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <link rel="stylesheet" href="./Insert_Product.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+  .table-container {
+    max-width: 900px;
+    width: 100%;
+    margin: 20px auto;
+    overflow-x: auto; /* Enable horizontal scrolling */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+tr, th {
+    color: #8B0000;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid white;
+    text-align: center;
+    background-color: #D9D9D9;
+}
+
+.img22 {
+    width: 100px;
+    height: 100px;
+    max-width: 100%; /* Ensure images don't overflow */
+    height: auto;   /* Maintain aspect ratio */
+}
+
+.but36 {
+    padding: 5px 10px;
+    margin-right: 5px;
+    background-color: #cebdbd;
+    color: black;
+    border: none;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .table-container {
+        margin: 10px auto;
+    }
+
+    th, td {
+        padding: 5px;
+        font-size: 14px;
+    }
+
+    .but36 {
+        padding: 8px 15px;
+        font-size: 14px; 
+    }
+
+    .img22 {
+        width: 80px;  
+        height: auto; 
+    }
+}
+
+</style>
+</head>
+<body>
+    <!-- Navbar Start -->
+    <nav id="container">
+        <div class="menu-toggle">
+            <div class="hamburger"><i class="fa-solid fa-bars"></i></div>
+        </div>
+        <ul class="menu">
+            <li><a href="./Dashboard.html">Dashboard</a></li>
+        </ul>
+        <div class="text-center" style="height: 40px;text-transform: uppercase;padding: 20px;margin-bottom: 46px;">
+            <p id="logo" ><strong><img src="./images/img29.png" alt=""  height="40px" onclick="window.location.href='Home.html'"></strong></p>
+        </div>
+        <div class="icon">
+           <button class="but12"><a href="#" style="color: white;"><i class="fa-solid fa-user-tie"></i>&nbsp;ADMIN</a></button>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+<!-- cards-container10-start -->
+<div class="container10">
+    <aside class="sidebar">
+      <div class="Product">
+           <h1><a href="./Insert_Product.html">Product</a></h1>
+           <h1><a href="./Insert Category.html">Categories</a></h1>
+           <h1><a href="./Slider_Images.html">Slider Images</a></h1>
+           <h1><a href="./View_customer.html">View Customer</a></h1>
+           <h1><a href="./View_orders.html">View Orders</a></h1>
+           <h1><a href="./View_payment.html">View Payments</a></h1>
+      </div>
+         
+    </aside>
+    <!-- aside-end -->
+   
+    <div class="container28">
+        <h1 class="Insert">Insert Product</h1>
+        
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Prod Id</th>
+                        <th>Prod Title</th>
+                        <th>Prod Image</th>
+                        <th>Prod Price</th>
+                        <th>Prod Category</th>
+                        <th>Prod Qty</th>
+                        <th>Make Changes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Necklace</td>
+                        <td><img src="./images/img355.jpg" alt="Necklace"  class="img22"></td>
+                        <td>7500</td>
+                        <td>Gold</td>
+                        <td>1</td>
+                        <td>
+                            <button class="but36">Edit</button>
+                            <button class="but36">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Rings</td>
+                        <td><img src="images/img356.jpg" alt="Rings" class="img22"></td>
+                        <td>95000</td>
+                        <td>Diamond</td>
+                        <td>1</td>
+                        <td>
+                            <button class="but36">Edit</button>
+                            <button class="but36">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Pendant</td>
+                        <td><img src="images/img357.png" alt="Pendant" class="img22"></td>
+                        <td>84500</td>
+                        <td>Gems</td>
+                        <td>2</td>
+                        <td>
+                            <button class="but36">Edit</button>
+                            <button class="but36">Delete</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+    
+    
+    
+     <!-- main-content-end -->
+</body>
+</html>

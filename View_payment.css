@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /* navbar-start */
+  
+  #container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #FED7BA;
+  color: black;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  border: 2px solid rgba(30, 112, 160, 0.445);
+  z-index: 1000;
+  }
+  
+  .menu-toggle {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  }
+  
+  .menu-toggle .hamburger {
+  margin: 4px 0;
+  transition: 0.4s;
+  }
+  
+  ul.menu {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  }
+  
+  ul.menu li {
+  margin-right: 40px;
+  }
+  
+  ul.menu li:last-child {
+  margin-right: 0;
+  }
+  
+  a {
+  text-decoration: none;
+  color: black;
+  }
+  
+  .name1 {
+  display: inline-block;
+  background-color: #8B0000;
+  color: white;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 20px;
+  }
+  
+  .logo-container {
+  text-align: center;
+  }
+  .but12{
+    width: 100px;
+    height: 40px;
+    background-color: #8B0000;
+    border-radius: 20%;
+  }
+  .icon {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  }
+  
+  @media screen and (max-width: 768px) {
+  .menu-toggle {
+      display: flex;
+  }
+  
+  ul.menu {
+      display: none;
+      flex-direction: column;
+      background-color: #FED7BA;
+      position: absolute;
+      top: 55px;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      padding: 20px 0;
+      z-index: 1;
+  }
+  
+  ul.menu.show {
+      display: flex;
+  }
+  
+  ul.menu li {
+      margin: 10px 0;
+  }
+  
+  .logo-container {
+      order: -1;
+      margin-right: auto;
+      margin-left: auto;
+  }
+  }
+  /* **********************************8 */
+
+  
+  .container10 {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #FED7BA;
+    min-height: 590px; 
+}
+
+.sidebar {
+    background-color: #f8f8f8;
+    padding: 20px;
+    width: 250px;
+    flex-shrink: 0; 
+}
+
+.sidebar .Product h1 {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.sidebar .Product h1 a {
+    text-decoration: none;
+    color: #333;
+}
+
+.container28 {
+    flex: 1;
+    flex-direction: column;
+}
+.but33{
+    padding: 10px;
+    margin-left: 10px;
+    background-color: #D27F7F;
+    color: #fff;
+}
+
+
+     
+form {
+    max-width: 600px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.form-group {
+    display: flex;
+    align-items: center;
+}
+label {
+    display: flex;
+    align-items: center;
+    font-size: 1.3em;
+    margin: 0;
+}
+input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(1.5);
+}
+
+
+.button45 {
+    display: flex;
+    gap: 10px;
+}
+.button45 button {
+    width: 80px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    
+}
+
+@media (max-width: 768px) {
+    .container10 {
+        flex-direction: column;
+    }
+    
+    .sidebar {
+        width: 100%;
+        margin-bottom: 20px; 
+    }
+    
+    .container28 {
+        width: 100%;
+    }
+    
+    
+}
+
+@media (max-width: 480px) {
+    .sidebar .Product h1 {
+        font-size: 1em;
+        margin-bottom: 10px;
+    }
+    
+   
+}
+/* *****************************2********************** */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #f2f2f2;
+}
+
+thead {
+    background-color: #f2f2f2;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.delete-button {
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    thead tr {
+        display: none;
+    }
+
+    tr {
+        margin-bottom: 15px;
+    }
+
+    td {
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+    }
+
+    td:before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 10px;
+        font-weight: bold;
+        text-align: left;
+    }
+
+    .delete-button {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    td {
+        padding-left: 40%;
+    }
+
+    td:before {
+        padding-left: 5px;
+        width: 40%;
+    }
+}

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="./Products.css">
+     <style>
+        .cantener12{
+            background-color: #FED7BA;
+        }
+        .container20 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+            
+        }
+
+    .card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    overflow: hidden;
+    width: calc(25% - 20px); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; 
+    background-color: #D9D9D9;
+}
+
+.card img {
+    width: 50%; 
+    height: auto;
+    display: block;
+    margin: 0 auto; 
+    margin-top: 30px;
+}
+
+        .card-content {
+            padding: 15px;
+        }
+
+        .card-title {
+            font-size: 18px;
+            margin: 0 0 10px;
+        }
+
+        .card-description {
+            font-size: 14px;
+            color: #555;
+        }
+
+        @media (max-width: 768px) {
+            .card {
+                width: calc(50% - 20px); 
+            }
+        }
+
+        @media (max-width: 480px) {
+            .card {
+                width: calc(100% - 20px); 
+            }
+        }
+        /* bark-strat */
+        .bark {
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.bark1, .bark2 {
+    position: absolute;
+    border: 1px solid #000;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.bark1 {
+    top: 10px;
+    left: 0;
+    width: 45%;
+    height: 50%;
+    background-color: #D6CBCB;
+    margin-left: 80px;
+    min-width: 60px;
+    padding: 30px;
+}
+
+.bark2 {
+    bottom: 20px;
+    right: 0;
+    width: 40%;
+    height: 50%;
+    background-color: #D6CBCB;
+    margin-right: 80px;
+    min-width: 60px;
+    padding: 30px;
+}
+
+.image-left, .image-right {
+    position: absolute;
+    max-width: 100px; 
+    height: auto; 
+}
+
+.image-left {
+    top: -40px;
+    left: -50px; 
+}
+
+.image-right {
+    top: -40px; 
+    right: -5px; 
+}
+
+@media screen and (max-width: 768px) {
+    .bark1, .bark2 {
+        position: static;
+        width: 100%;
+        height: auto;
+        margin: 10px 0;
+        padding: 15px;
+    }
+
+    .image-left, .image-right {
+        position: static;
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto 10px;
+    }
+
+    .bark2 {
+        margin-right: 0;
+    }
+
+    .image-left {
+        display: block;
+        margin: 0 auto 10px;
+    }
+
+    .image-right {
+        display: block;
+        margin: 0 auto 10px;
+    }
+}
+/* bark-end*/
+     </style>
+</head>
+<body>
+ <!-- Navbar Start -->
+ <nav id="container">
+    <div class="menu-toggle">
+        <div class="hamburger"><i class="fa-solid fa-bars"></i></div>
+    </div>
+    <ul class="menu">
+        <li><a href="./Home.html">Home</a></li>
+        <li><a href="./Shop.html">Shop</a></li>
+        <li><a href="./blog.html">Blog</a></li>
+    </ul>
+    <div class="text-center" style="height: 40px;text-transform: uppercase;padding: 20px;margin-bottom: 46px;">
+        <p id="logo" ><strong><img src="./images/img29.png" alt=""  height="40px" ></strong></p>
+    </div>
+    <div class="icon">
+        <a href="#"><i class="fa-solid fa-heart"></i></a>&nbsp;&nbsp;&nbsp;
+        <a href="#"><i class="fa fa-user"></i></a>&nbsp;&nbsp;&nbsp;
+        <a href="#"><i class="fa fa-shopping-cart"></i></a>
+    </div>
+</nav>
+<!-- Navbar End -->
+     <div class="cantener12">
+      <div class="container20">
+        <div class="card">
+            <img src="./images/k1.png" alt="Card Image">
+            <div class="card-content">
+                <h3 class="card-title" style="text-align: center;"><a href="./gifts.html">Tiny Treasure Trinkets</a></h3>
+                <p style="text-align: center;color: blue;">Rs 67800</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./images/k2.png" alt="Card Image">
+            <div class="card-content">
+                <h3 class="card-title"  style="text-align: center;">Petite Pendant Paradise</h3>
+                <p style="text-align: center;color: blue;">Rs 72867</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./images/k3.png" alt="Card Image">
+            <div class="card-content">
+                <h3 class="card-title"  style="text-align: center;">Playful Gem Pal Pendant</h3>
+                <p style="text-align: center;color: blue;">Rs 89000</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./images/k4.png" alt="Card Image" >
+            <div class="card-content">
+                <h3 class="card-title"  style="text-align: center;">Joyful Stone Chain</h3>
+                <p style="text-align: center;color: blue;">Rs 97450</p>
+            </div>
+        </div>
+    </div>
+    <!-- *******************************1************************************ -->
+
+    <div class="container20">
+        <div class="card">
+            <img src="./images/k5.png" alt="Card Image">
+            <div class="card-content">
+                <h3 class="card-title" style="text-align: center;"><a href="./gifts.html">Kid Craze Charms</a></h3>
+                <p style="text-align: center;color: blue;">Rs 78905</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./images/k6.png" alt="Card Image">
+            <div class="card-content">
+                <h3 class="card-title"  style="text-align: center;">Little Loom Lagoon Bracelet</h3>
+                <p style="text-align: center;color: blue;">Rs 89056</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./images/k7.jpg" alt="Card Image">
+            <div class="card-content">
+                <h3 class="card-title"  style="text-align: center;">Sunny Bead Sprouts</h3>
+                <p style="text-align: center;color: blue;">Rs 65460</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./images/k8.jpg" alt="Card Image" >
+            <div class="card-content">
+                <h3 class="card-title"  style="text-align: center;">Frolic Fashion For Kid</h3>
+                <p style="text-align: center;color: blue;">Rs 90000</p>
+            </div>
+        </div>
+    </div>
+      <!-- **************************************2****************************** -->
+      <div class="container20">
+        <div class="card">
+            <img src="./images/k10.jpg" alt="Card Image">
+            <div class="card-content">
+                <h3 class="card-title" style="text-align: center;"><a href="./gifts.html">Pixie Gold Pendant </a></h3>
+                <p style="text-align: center;color: blue;">Rs 67800</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./images/k11.png" alt="Card Image">
+            <div class="card-content">
+                <h3 class="card-title"  style="text-align: center;">Junior Jamboree Pendant</h3>
+                <p style="text-align: center;color: blue;">Rs 95879</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./images/k12.jpg" alt="Card Image">
+            <div class="card-content">
+                <h3 class="card-title"  style="text-align: center;">Kinder Glow Pendant</h3>
+                <p style="text-align: center;color: blue;">Rs 84563</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./images/k13.png " alt="Card Image">
+            <div class="card-content">
+                <h3 class="card-title"  style="text-align: center;">Sweetie Sparkle Bracelet</h3>
+                <p style="text-align: center;color: blue;">Rs 96900</p>
+            </div>
+        </div>
+    </div>
+    <!-- ******************************3******************************** -->
+    <!-- bark-start -->
+  <div class="bark">
+    <div class="bark1">
+        <img src="./images/img335.png" class="image-right" alt="Left Image"  >
+        <h2>Elite Embellish Gold and Diamond Ring</h2>
+        <br>
+          <p>Discover elegance redefined with EliteEmbellish. Elevate your style, embrace sophistication.
+            Unlock refined masculinity with EliteEmbellish. Every piece tells a story of elegances</p>
+    </div>
+    <div class="bark2">
+        <img src="./images/img334.png" class="image-left" alt="Left Image" >
+        <h2>Step Into Sophistication at Glamour</h2>
+        <p>Indulge in timeless elegance with Glamour Grove. Your journey to opulent chic begins here. Unleash your inner radiance and Unveil the allure of exquisite elegance.</p>
+  </div>
+  </div>
+  <!-- bark-end-->
+      <br>
+      <!-- footer-start -->
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h4 style="color: #8B0000;">Address</h4>
+            <p>Crystals & Carats
+              Plot No 44, 45, Street Number 14,
+              Marol MIDC Industry Estate,
+              Andheri East,Mumbai -400093</p>
+              <p style="color: #8B0000;"> location</p>
+               <a href=""> <img src="./images/img27.png" alt="" height="100px"></a>
+              
+        </div>
+        <div class="footer-section">
+            <h4 style="color: #8B0000;">Help & Info</h4>
+            <ul>
+                <li><a href="./Aboutus.html">About Crystals & Carat</a></li>
+                <li><a href="./Carres.html">Careers</a></li>
+                <li><a href="./blog.html">Blogs</a></li>
+                <li><a href="./FaQ.html">FAQs</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4 style="color: #8B0000;">Contact Us</h4>
+            <p>
+                <a href="#"><i class="fa-solid fa-phone"></i>&nbsp;1809-908-5647</a><br><br>
+                <a href="#"><i class="fa-solid fa-vector-square"></i>&nbsp;Get in Touch</a><br><br>
+                <a href="#"><i class="fa-brands fa-rocketchat"></i>&nbsp;Chat With Us</a>
+            </p>
+        </div>
+        <div class="footer-section">
+            <h4 style="color: #8B0000;">Useful links</h4>
+           <a href=""><p>Privacy Policy</p></a> 
+           <a href=""><p>Terms of Use</p></a>
+           <a href=""><p>Payment Issues</p></a>
+           <a href=""><p>Net Banking</p></a>
+           <a href=""><p>Custom Jewellery</p></a>
+        </div>
+    </div>
+    <p style="text-align: center;"><big style="color: #8B0000;">Follow Us on : </big>
+      <i class="fa-brands fa-facebook-f"></i>&nbsp;&nbsp;
+      <i class="fa-brands fa-twitter"></i>&nbsp;&nbsp;
+      <i class="fa-brands fa-linkedin"></i>&nbsp;&nbsp;
+      <i class="fa-brands fa-github"></i>
+</footer>
+<p class="para">
+  @2023 Crystals & Carats. All Rights Reserved.
+</p>
+
+  <!-- footer-end-->
+     </div>
+     <script src="./Home.js"></script>
+</body>
+</html>

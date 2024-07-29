@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+.My-cart {
+    padding: 10px;
+    background-color: #FED7BA;
+}
+
+.my-cart-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    background-color: #FED7BA;
+    height: 70px;
+    width: 100%;
+    border-radius: 2px solid black;
+    font-size: 40px;
+}
+
+.my-cart-header p {
+    margin: 0;
+    background-color: #FED7BA;
+}
+
+.my-cart-header a {
+    text-decoration: none;
+    color: black;
+}
+
+.delivery {
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #D9D9D9;
+}
+
+.delivery-info {
+    font-size: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.delivery-info button {
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 50px;
+    width: 10%;
+    background-color: #870A0AB8;
+}
+
+.delivery-info button:hover {
+    background-color: #0056b3;
+}
+.delivery-info .but3 {
+    margin-right: 20px; 
+}
+.address {
+    font-size: 40px;
+    margin-top: 10px;
+}
+
+/* Product Container */
+.product-container {
+    display: flex;
+    border: 1px solid #ddd;
+    background-color: #D9D9D9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-details {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.product-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.special-price {
+    color: #d9534f;
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #777;
+    margin-left: 10px;
+    font-size: 0.9em;
+}
+
+.buttons {
+    margin: 20px 0;
+}
+
+.buttons button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buttons button.remove {
+    background-color: #d9534f;
+}
+
+.buttons button.save {
+    background-color: #f0ad4e;
+}
+
+.buttons button.buy {
+    background-color: #5cb85c;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.quantity label {
+    margin-right: 10px;
+}
+
+/* Price Section */
+.container23 {
+    width: 95%;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #D9D9D9;
+    font-size: 25px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.row:last-child {
+    font-weight: bold;
+}
+
+/* Card Container */
+.container9 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.card {
+    background-color: #CCBDBD;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    overflow: hidden;
+    width: calc(20% - 20px); 
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 18px;
+    margin: 0 0 10px;
+}
+
+.card-description {
+    font-size: 14px;
+    color: #555;
+}
+
+@media (max-width: 1200px) {
+    .card {
+        width: calc(33.33% - 20px); 
+    }
+}
+
+@media (max-width: 992px) {
+    .card {
+        width: calc(50% - 20px); 
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: calc(100% - 20px); 
+    }
+
+    .my-cart-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .delivery-info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .delivery-info button {
+        margin-top: 10px;
+    }
+
+    .address {
+        font-size: 0.875rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .delivery-info {
+        font-size: 1rem;
+    }
+
+    .address {
+        font-size: 0.75rem;
+    }
+
+    .delivery-info button {
+        padding: 8px;
+        font-size: 0.875rem;
+        width: 30%;
+    }
+}
+
+  </style>
+</head>
+<body>
+    <div class="My-cart">
+        <div class="my-cart-header">
+            <p><i class="fa-solid fa-left-long"></i><big><a href="./product-component.html" style="text-decoration: none;color: black;">My Cart</a></big></p>
+        </div>
+        <div class="delivery">
+            <p class="delivery-info"><small>Deliver to: Name..., 487589</small><button class="but3"  >Change</button></p>
+            <p class="address"><small>House No. 567, Shubhas Nagar Anant<br><em>Vihar, Delhi</em></small></p>
+        </div>
+        <br>
+        <!-- Stylish Regal Radiance Diamond Bracelet-start -->
+        <div class="product-container">
+            <div class="product-details">
+                <h1>Stylish Regal Radiance Diamond Bracelet</h1>
+                <p>2.4, Light Weight</p>
+                <p class="special-price">Special Price: Rs. 75,000 <span class="original-price">Rs. 1,00,000</span> (25% off)</p>
+                <p>4 stars</p>
+                <p>1500 ratings and 300 reviews</p>
+                <div class="buttons">
+                    <button class="remove">Remove</button>
+                    <button class="save">Save For Later</button>
+                    <button class="buy">Buy Now</button>
+                </div>
+                <div class="quantity">
+                    <select id="qty" name="qty" style="background-color: #CCBDBD;">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </div>
+            </div>
+            <div class="product-image">
+                <img src="./images/img201.png" alt="Diamond Bracelet" height="300px" width="50%">
+            </div>
+        </div>
+         <!-- Stylish Regal Radiance Diamond Bracelet-end -->
+         <!-- Price Details-start -->
+         <br>
+         <div class="container23">
+            <h2>Price Details</h2>
+            <div class="row">
+                <div>Price(1 item)</div>
+                <div>Rs 100000</div>
+            </div>
+            <div class="row">
+                <div>Discount</div>
+                <div>-Rs 25000</div>
+            </div>
+            <div class="row">
+                <div>Delivery Charge</div>
+                <div>FREE DELIVERY</div>
+            </div>
+            <hr>
+            <div class="row">
+                <div>Total</div>
+                <div>Rs 75000</div>
+            </div>
+            <hr>
+            <p style="color: #d9534f;">You will save Rs 25000 on this order</p>
+        </div>
+         <!-- Price Details-end -->
+     <br>
+
+<div class="cradss">
+    <div class="crd4">
+         <h1>Products From Your Wislist</h1>
+         <div class="container9">
+            <div class="card">
+                <img src="./images/img222.png" alt="Card Image">
+                <div class="card-content">
+                    <h3 class="card-title" style="text-align: center;">Blossom Brio Earing <br> <small style="color: #4B04A6;">Rs 58976</small></h3>
+                    <p class="card-description" style="text-align: center;"><button style="background-color: #26A332;">4.1<i class="fa-solid fa-star"></i></button><br><br>
+                    <button style="background-color: #CCBDBD;">Add To Cart</button></p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./images/img223.png" alt="Card Image">
+                <div class="card-content">
+                    <h3 class="card-title" style="text-align: center;">Regal Radiance Gold <br> <small style="color: #4B04A6;">Rs 49807</small></h3>
+                    <p class="card-description" style="text-align: center;"><button style="background-color: #26A332;">4.2<i class="fa-solid fa-star"></i></button><br><br>
+                    <button style="background-color: #CCBDBD;">Add To Cart</button></p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./images/img224.png" alt="Card Image">
+                <div class="card-content">
+                    <h3 class="card-title" style="text-align: center;">Luminous  Pendant<br> <small style="color: #4B04A6;">Rs 52745</small></h3>
+                    <p class="card-description" style="text-align: center;"><button style="background-color: #FFD700;">3.9<i class="fa-solid fa-star"></i></button><br><br>
+                    <button style="background-color: #CCBDBD;">Add To Cart</button></p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./images/img225.png" alt="Card Image">
+                <div class="card-content">
+                    <h3 class="card-title" style="text-align: center;">Fleur Finesse  Earing<br> <small style="color: #4B04A6;">Rs 65000</small></h3>
+                    <p class="card-description" style="text-align: center;"><button style="background-color: #26A332;">4.5<i class="fa-solid fa-star"></i></button><br><br>
+                    <button style="background-color: #CCBDBD;">Add To Cart</button></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <!-- second-card-strat -->
+    <div class="crd4">
+        <h1>Recently Viewed</h1>
+        <div class="container9">
+           <div class="card">
+               <img src="./images/img226.jpg" alt="Card Image">
+               <div class="card-content">
+                   <h3 class="card-title" style="text-align: center;">Blossom Brio Earing <br> <small style="color: #4B04A6;">Rs 58976</small></h3>
+                   <p class="card-description" style="text-align: center;"><button style="background-color: #26A332;">4.1<i class="fa-solid fa-star"></i></button><br><br>
+                   <button style="background-color: #CCBDBD;">Add To Cart</button></p>
+               </div>
+           </div>
+           <div class="card">
+               <img src="./images/img227.png" alt="Card Image">
+               <div class="card-content">
+                   <h3 class="card-title" style="text-align: center;">Regal Radiance Gold <br> <small style="color: #4B04A6;">Rs 49807</small></h3>
+                   <p class="card-description" style="text-align: center;"><button style="background-color: #26A332;">4.2<i class="fa-solid fa-star"></i></button><br><br>
+                   <button style="background-color: #CCBDBD;">Add To Cart</button></p>
+               </div>
+           </div>
+           <div class="card">
+               <img src="./images/img228.jpg" alt="Card Image">
+               <div class="card-content">
+                   <h3 class="card-title" style="text-align: center;">Luminous  Pendant<br> <small style="color: #4B04A6;">Rs 52745</small></h3>
+                   <p class="card-description" style="text-align: center;"><button style="background-color: #FFD700;">3.9<i class="fa-solid fa-star"></i></button><br><br>
+                   <button style="background-color: #CCBDBD;">Add To Cart</button></p>
+               </div>
+           </div>
+           <div class="card">
+               <img src="./images/img229.png" alt="Card Image">
+               <div class="card-content">
+                   <h3 class="card-title" style="text-align: center;">Fleur Finesse  Earing<br> <small style="color: #4B04A6;">Rs 65000</small></h3>
+                   <p class="card-description" style="text-align: center;"><button style="background-color: #26A332;">4.5<i class="fa-solid fa-star"></i></button><br><br>
+                   <button style="background-color: #CCBDBD;">Add To Cart</button></p>
+               </div>
+           </div>
+       </div>
+   </div>
+     <!-- second-card-strat -->
+</div>
+</div>
+
+</body>
+</html>
